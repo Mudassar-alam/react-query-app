@@ -6,6 +6,10 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { BrowserRouter, Routes,Route } from 'react-router-dom'
 import PostList from './components/Posts/PostList';
 import Singlepost from './components/Posts/Singlepost';
+import Grid from './components/GridSystem/Grid';
+import ContextCheck from './components/ContextCheck';
+import Practice from './components/practice/practiceone';
+import NewForm from './components/crud/simple';
 function App() {
 
 
@@ -14,8 +18,16 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<PostList />} exact   />
-      <Route path='/posts/:id' element={<Singlepost />} />
+      {/* <Route path='/' element={<PostList />} exact   /> */}
+      {/* <Route path='/posts/:id' element={<Singlepost />} /> */}
+      {/* <Route path='/' element={<Grid />}/> */}
+      
+      {/* <Route path='/' element={<ContextCheck />} /> */}
+      {/* <Route path='/' element={<Practice />} /> */}
+      <Route path='/' element={<NewForm />} />
+      <Route path='/' element={<NewForm />} />
+
+
     </Routes>
     </BrowserRouter>
     </>
